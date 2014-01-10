@@ -3,7 +3,7 @@ if [ -e "/opt/vagrant-installed" ]; then
     exit 0
 fi
 mkdir /opt/vagrant-installed
-apt-get install python-smbus vim python-setuptools -y
+apt-get vim install python-smbus vim python-setuptools -y
 easy_install web.py pyserial
 
 rm -rf /var/www
